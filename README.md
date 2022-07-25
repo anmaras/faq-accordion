@@ -1,6 +1,6 @@
 # FAQ-Accordion-card
 
-A React exercise so to create a faq-accordion component with some functionality
+A React exercise to create a faq-accordion component with some functionality
 
 The design was created to the following widths:
 
