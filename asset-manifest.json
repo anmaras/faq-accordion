@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/faq-accordion/static/css/main.7d1c6f32.css",
+    "main.css": "/faq-accordion/static/css/main.ea3f6bef.css",
     "main.js": "/faq-accordion/static/js/main.60f3a471.js",
     "static/media/illustration-woman-online-mobile.svg": "/faq-accordion/static/media/illustration-woman-online-mobile.fe928f9c476ef6d332672b3ab38268fd.svg",
     "static/media/illustration-woman-online-desktop.svg": "/faq-accordion/static/media/illustration-woman-online-desktop.843eb114c7213a596ee246bf87f27008.svg",
@@ -9,11 +9,11 @@
     "static/media/bg-pattern-desktop.svg": "/faq-accordion/static/media/bg-pattern-desktop.f51e07a2f52390c60484dd7a5bc7d842.svg",
     "static/media/bg-pattern-mobile.svg": "/faq-accordion/static/media/bg-pattern-mobile.55aee9128a769eedabec262efb8ace48.svg",
     "static/media/icon-arrow-down.svg": "/faq-accordion/static/media/icon-arrow-down.852fa301a0e795e07c5966b1c156025f.svg",
-    "main.7d1c6f32.css.map": "/faq-accordion/static/css/main.7d1c6f32.css.map",
+    "main.ea3f6bef.css.map": "/faq-accordion/static/css/main.ea3f6bef.css.map",
     "main.60f3a471.js.map": "/faq-accordion/static/js/main.60f3a471.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d1c6f32.css",
+    "static/css/main.ea3f6bef.css",
     "static/js/main.60f3a471.js"
   ]
 }
