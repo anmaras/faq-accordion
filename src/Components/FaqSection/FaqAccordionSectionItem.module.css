@@ -1,17 +1,22 @@
 .accordion-section {
+  display: -ms-grid;
   display: grid;
+  grid-auto-rows: minmax(-webkit-max-content, auto);
   grid-auto-rows: minmax(max-content, auto);
+  -ms-flex-line-pack: center;
   align-content: center;
   position: relative;
   top: 20px;
 }
 
 .accordion-section h1 {
-  color: rgb(var(--clr-very-dark-grayish-blue));
-  align-self: center;
-  justify-self: center;
-  font-size: 2rem;
   position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  color: rgb(var(--clr-very-dark-grayish-blue));
+  font-size: 2rem;
   top: -10px;
 }
 
@@ -22,30 +27,22 @@
 }
 
 .accordion-wrapper :first-child {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 0.819rem;
-}
-@media (min-width: 1440px) {
-  .accordion-section {
-    width: 70%;
-    justify-self: center;
-  }
-  .accordion-wrapper :first-child {
-    font-size: 0.9rem;
-  }
-
-  .accordion-section h1 {
-    top: 20px;
-    right: 280px;
-    justify-self: self-start;
-  }
 }
 
 .question {
   cursor: pointer;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   color: rgb(var(--clr-dark-grayish-blue));
   font-weight: 700;
@@ -53,10 +50,11 @@
 
 .question:hover {
   color: rgb(var(--clr-soft-red));
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
 
-/* Style to be applied when  */
 .qselect {
   color: rgb(var(--clr-very-dark-grayish-blue));
 }
@@ -70,6 +68,8 @@
   position: relative;
   top: 20px;
   line-height: 1.6;
+  -webkit-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
   letter-spacing: 0.2px;
 }
@@ -78,16 +78,45 @@
   max-height: 4rem;
   top: 0px;
   margin-top: 10px;
+  -webkit-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 
 .arrow {
   display: inline-block;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
 .rotate {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+@media (min-width: 1440px) {
+  .accordion-section {
+    width: 70%;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+  .accordion-wrapper :first-child {
+    font-size: 0.9rem;
+  }
+
+  .accordion-section h1 {
+    top: 20px;
+  }
 }
