@@ -1,0 +1,35 @@
+.mob-logo__wrapper {
+  width: 85%;
+  max-height: 150px;
+  position: relative;
+  bottom: 130px;
+  margin: auto;
+}
+
+.mob-logo__pattern {
+  position: relative;
+  bottom: 70px;
+}
+
+.box {
+  position: absolute;
+  top: 140px;
+  z-index: 1;
+  right: 340px;
+}
+
+@media (min-width: 1440px) {
+  .mob-logo__wrapper {
+    width: 500px;
+    right: 110px;
+    bottom: 110px;
+  }
+
+  .mob-logo__pattern {
+    height: auto;
+    bottom: 500px;
+    right: 275px;
+    transform: scale(2);
+    z-index: -1;
+  }
+} ;

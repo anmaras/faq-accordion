@@ -1,0 +1,26 @@
+.App {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  top: 31px;
+  width: 327px;
+  height: 535px;
+  padding: 1.5rem;
+  border-radius: 25px;
+  display: grid;
+  grid-template-rows: 100px auto;
+}
+
+@media (min-width: 1440px) {
+  .App {
+    top: 0;
+    left: 20px;
+    width: 920px;
+    height: 510px;
+    grid-auto-flow: column;
+    grid-template-columns: 400px 1fr;
+    overflow: hidden;
+    grid-template-rows: 1fr;
+    z-index: 10;
+  }
+}
