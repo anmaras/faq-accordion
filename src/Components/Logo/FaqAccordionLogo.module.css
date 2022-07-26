@@ -11,11 +11,12 @@
   bottom: 70px;
 }
 
-.box {
+.box-wrapper {
   position: absolute;
-  top: 140px;
-  z-index: 1;
-  right: 340px;
+  z-index: 100;
+  top: 200px;
+  right: 740px;
+  width: 250px;
 }
 
 @media (min-width: 1440px) {

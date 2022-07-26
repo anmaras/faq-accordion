@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import bgPatternMobile from '../../images/bg-pattern-mobile.svg';
 import womanMobile from '../../images/illustration-woman-online-mobile.svg';
 import womanDesktop from '../../images/illustration-woman-online-desktop.svg';
@@ -7,13 +8,17 @@ import boxDesktop from '../../images/illustration-box-desktop.svg';
 import style from './FaqAccordionLogo.module.css';
 class faqAccordionLogo extends Component {
   render() {
+    const boxImg = (
+      <picture className={style['box-wrapper']}>
+        <source media="(min-width:1440px)" srcSet={boxDesktop} />
+        <source media="(min-width:375px)" srcSet={boxDesktop} width="0" />
+        <img src={boxDesktop} alt="box logo" className={style.box} />
+      </picture>
+    );
+
     return (
       <div className={style['mob-logo__wrapper']}>
-        <picture>
-          <source media="(min-width:1440px)" srcSet={boxDesktop} />
-          <source media="(min-width:375px)" srcSet={boxDesktop} width="0" />
-          <img src={boxDesktop} alt="box logo" className={style.box} />
-        </picture>
+        {ReactDOM.createPortal(boxImg, document.getElementById('root'))}
         <picture>
           <source media="(min-width:1440px)" srcSet={womanDesktop} />
           <source media="(min-width:375px)" srcSet={womanMobile} />
